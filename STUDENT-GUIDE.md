@@ -7,8 +7,8 @@ KiCad runs on a computer in the cloud. You see and control it in a Chrome tab. N
 1. Go to this repository on GitHub and sign in.
 2. Click the green **Code** button → **Codespaces** tab → **Create codespace on main**.
    (Next time, click your existing codespace in that same list instead of making a new one.)
-3. Wait for the editor to load. A new tab called **KiCad desktop** should open by itself.
-   - If it doesn't: in the editor, click the **Ports** tab at the bottom, find **KiCad desktop (6080)**, and click the globe icon.
+3. Wait for the editor to load. A message pops up in the bottom-right corner about **KiCad desktop**. Click **Open in Browser**.
+   - Missed it? In the editor, click the **Ports** tab at the bottom, find **KiCad desktop (6080)**, and click the globe icon.
 4. Click **Connect** on the page that appears. KiCad opens a few seconds later.
 
 If KiCad isn't on the desktop, right-click the desktop → **Terminal**, type `kicad &` and press Enter.

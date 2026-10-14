@@ -25,6 +25,6 @@ done
 # Launch KiCad once; don't stack copies if the student reconnects.
 if ! pgrep -x kicad >/dev/null 2>&1; then
   cd "${CODESPACE_VSCODE_FOLDER:-$PWD}/projects" 2>/dev/null || true
-  nohup kicad >/tmp/kicad.log 2>&1 &
+  setsid -f kicad </dev/null >/tmp/kicad.log 2>&1
 fi
 exit 0

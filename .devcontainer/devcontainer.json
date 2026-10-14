@@ -13,7 +13,7 @@
   "hostRequirements": { "cpus": 4, "memory": "8gb" },
   "forwardPorts": [6080],
   "portsAttributes": {
-    "6080": { "label": "KiCad desktop", "onAutoForward": "openBrowser" }
+    "6080": { "label": "KiCad desktop", "onAutoForward": "notify" }
   },
   "postStartCommand": "kicad-first-run",
   "customizations": {
