@@ -1,0 +1,20 @@
+# KiCad backups, caches and lock files
+*-backups/
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+fp-info-cache
+~*.lck
+*.lck
+_autosave-*
+\#auto_saved_files#
+
+# Fabrication outputs (regenerate from the design; remove these lines to keep them in Git)
+*.gbr
+*.drl
+gerbers/
+
+# OS clutter
+.DS_Store

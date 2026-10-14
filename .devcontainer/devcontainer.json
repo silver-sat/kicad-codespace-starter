@@ -1,0 +1,22 @@
+{
+  "name": "KiCad (browser desktop)",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": { "INSTALL_3D_MODELS": "true" }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "password": "noPassword",
+      "webPort": "6080"
+    }
+  },
+  "hostRequirements": { "cpus": 4, "memory": "8gb" },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": { "label": "KiCad desktop", "onAutoForward": "openBrowser" }
+  },
+  "postStartCommand": "kicad-first-run",
+  "customizations": {
+    "codespaces": { "openFiles": ["STUDENT-GUIDE.md"] }
+  }
+}
